@@ -1,0 +1,203 @@
+.calculation
+  margin-top: rem(55)
+  padding-bottom: rem(40)
+  
+  .title
+    padding-left: rem(15)
+
+  .select__list-item-img
+    max-width: rem(30)
+    min-width: rem(30)
+
+  input,
+  .select
+    height: rem(40)
+
+  &__wrap
+    @include jfcsb
+    padding: 0 rem(90)
+
+  &__col
+    .input-wrap
+      margin-top: rem(25)
+
+      .input
+        width: calc( 47.6% - 16px )
+
+    &:first-child
+      width: calc( 60% - 20px )
+
+    &:last-child
+      width: calc( 40% - 20px )
+
+  &__parcel
+    margin-top: rem(30)
+
+    .tabs_item_select
+      .input-wrap
+        padding: 0 rem(10)
+        .input
+          width: 100%
+
+    &-info
+      @include jfcsb
+      margin-top: rem(25)
+
+    &-col
+      width: calc( 33% - 8px )
+
+  &__desc
+    margin-top: rem(25)
+    font-size: rem(12)
+    line-height: rem(17)
+    font-weight: 500
+
+  &__tabs
+    margin-top: rem(25)
+    margin-bottom: rem(40)
+    border-radius: rem(24)
+    overflow: hidden
+
+    @include lg
+      border-radius: rem(12)
+
+    .tab
+      .tabs
+        background: none
+        width: 100%
+        margin-bottom: 0
+
+        li
+          width: 50%
+
+          &:after
+            position: absolute
+            content: ''
+            width: 100%
+            height: 100%
+            border-radius: rem(24) rem(24) 0 0
+            background: rgb(254,204,0)
+            background: linear-gradient(180deg, rgba(254,204,0,1) 14%, rgba(255,255,255,0) 90%)
+            top: 0
+            z-index: -1
+            transition: $transition
+
+            @include lg
+              border-radius: rem(12) rem(12) 0 0
+
+          &:before
+            border-radius: rem(22) rem(22) 0 0
+            background-color: #F8F7FC
+            width: calc( 100% - 2px )
+            height: calc( 100% - 1px )
+            bottom: 0
+
+            @include lg
+              border-radius: rem(10) rem(10) 0 0
+
+          a
+            font-size: rem(18)
+            padding-top: rem(15)
+            padding-bottom: rem(15)
+
+          &.current
+            a
+              color: $accent
+
+          &:first-child
+            &:before
+              left: 100%
+
+            &.current
+              &:before
+                left: rem(1)
+
+          &:last-child
+            &:before
+              right: 100%
+
+            &.current
+              &:before
+                right: rem(1)
+
+      .tab_content
+
+        .tabs_item
+          padding: rem(25)
+          overflow: hidden
+          background-color: #F8F7FC
+          position: relative
+
+          &:first-child
+            border-radius: 0 rem(24)
+
+            @include lg
+              border-radius: 0 rem(12)
+
+          &:last-child
+            border-radius: rem(24) 0
+
+            @include lg
+              border-radius: rem(12) 0
+
+    &-top
+      span
+        color: $accent
+
+    &-bottom
+      @include aic-jfcsb
+      margin-top: rem(30)
+
+      p
+        font-size: rem(36)
+        font-weight: 500
+
+  &__price-list
+    background-color: #F8F7FC
+    border-radius: rem(24)
+    padding: rem(25)
+
+    @include lg
+      border-radius: rem(12)
+    
+    .title  
+      font-size: rem(18)
+      font-weight: 600
+      padding-left: 0
+      line-height: rem(18)
+      margin-bottom: rem(5)
+
+    .subtitle
+      color: $black
+      font-size: rem(14)
+
+    table
+      width: 100%
+      border-collapse: collapse
+      margin: rem(15) 0
+
+      tr
+        td
+          padding: 0 rem(10)
+          font-size: rem(12)
+          border-right: rem(1) solid #B0B2B2
+          line-height: rem(12)
+
+          &:first-child
+            color: #263238
+            padding: 0
+            border: none
+
+          &:last-child
+            border: none
+            padding-right: 0
+
+          b
+            color: $black
+        &:last-child
+          td
+            color: $textcolor
+            padding-top: rem(8)
+
+      .table-flex-container
+        @include aic-jfcsb

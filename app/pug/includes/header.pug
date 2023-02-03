@@ -1,0 +1,33 @@
+header.header 
+  .container-lg 
+    .header__wrap
+      .header__logo 
+        a(href="#")
+          svg.icon
+            use(xlink:href='sprite.svg#logoHeader')  
+      .header__nav 
+        ul 
+          each nav in['Отправить посылку','Бизнес клиентам','Шоппинг','О компании','Контакты']      
+            li 
+              a(href="#")=nav 
+      .header__control
+        a(href="#").btn Оставить заявку
+
+        .header__lang
+          .header__lang-seleced 
+            img(loading="lazy" src="images/dist/kg.webp", alt="")
+            svg.icon
+              use(xlink:href='sprite.svg#angle-down-lang')
+
+          .header__lang-dropdown
+              
+            p Выберите язык
+            .header__lang-list
+              each lang in langs
+                .header__lang-item
+                  a(href=lang.link) 
+                    img(loading="lazy" src="images/dist/"+lang.flag+".webp", alt="") 
+                    .header__lang-name=lang.lang        
+
+        .hamburger 
+          span             

@@ -1,0 +1,14 @@
+.steps.tac.section
+  .container-lg 
+    h2.title.tac Отправить посылку просто!
+    .steps__wrap.icon-block-wrap
+      each step,index in['Заполните данные о посылке,\t отправителе и получателе в калькуляторе. Оплатите онлайн','Упакуйте посылку самостоятельно либо воспользуйтесь нашей упаковкой в пункте приема','Отнесите посылку в удобный для вас пункт приема или вызовите курьера','Отслеживайте статус отправления онлайн по трек-номеру до момента вручения']
+        .steps__item.icon-block-item
+          .icon-block-icon 
+            svg.icon
+              use(xlink:href='sprite.svg#step'+(index+1)) 
+            svg.icon.icon--arrow
+              use(xlink:href='sprite.svg#arrow')
+
+          p=step  
+    a.btn(href="#") Вопросы и ответы       

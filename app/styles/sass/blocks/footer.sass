@@ -1,0 +1,81 @@
+.footer
+	flex: 0 0 auto
+	&__top
+		background-color: $accent
+		padding: rem(40) 0 rem(25)
+
+		*
+			color: $white
+		p
+			font-size: rem(12)
+			line-height: rem(15)
+
+	&__nav
+		margin-top: rem(40)
+		display: flex
+		
+		@include lg
+			flex-wrap: wrap
+
+		@include xs
+			justify-content: space-between	
+		
+		&-col
+			width: 17%
+			padding-right: rem(10)
+
+			@include lg
+				width: 33%
+				margin-bottom: rem(30)
+
+			@include xs
+				width: calc( 50% - 5px )
+				padding-right: 0	
+		
+		&-main-link
+			text-decoration: underline
+			font-size: rem(18)
+			font-weight: 500
+			margin-bottom: rem(15)
+			
+			@include sm
+				margin-bottom: rem(10)
+				font-size: rem(16)
+				line-height: rem(16)
+
+
+		ul
+			li
+				display: block
+				&:last-child
+					margin-bottom: 0
+				a
+					color: rgba(176, 178, 178, 1)
+					font-size: rem(14)
+					line-height: rem(28)
+
+	&__control
+		@include aic-jfcsb
+		margin-top: rem(30)
+
+	.lang
+		span
+			color: #B0B2B2
+		
+		ul
+			bottom: 0
+			
+		
+		&.open
+			ul
+				opacity: 1
+				bottom: 100%
+
+	&__bottom
+		background-color: $white
+		padding: rem(10)
+		
+		p
+			text-align: center
+			font-size: rem(10)
+			line-height: rem(14)

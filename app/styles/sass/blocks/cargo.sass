@@ -1,0 +1,108 @@
+.cargo
+
+  .hero
+    width: 100%
+
+    &__wrap
+      @include aifs-jfcsb
+
+      @include md
+        flex-direction: column-reverse
+
+      @include sm
+        flex-direction: column
+        text-align: center
+
+    &__col
+      width: calc( 50% - 35px)
+
+      @include lg
+        width: calc( 50% - 10px)
+
+      @include md
+        width: 100%
+
+  &__form
+    padding: rem(25)
+    background-color: #f8f7fc
+    border-radius: rem(24)
+    margin-top: rem(60)
+
+    @include lg
+      border-radius: rem(12)
+      padding: rem(20)
+
+    @include md
+      padding: rem(15)
+
+    @include sm
+      padding: rem(10)
+
+    h2
+      color: $accent
+      margin-bottom: rem(30)
+      line-height: rem(24)
+
+    .input-wrap
+      margin-bottom: rem(25)
+      @include jfcsb
+      position: relative
+
+      @include xs
+        flex-direction: column
+        margin-bottom: 0
+
+      .input
+        width: 44%
+
+        @include xs
+          width: 100%
+          margin-bottom: rem(20)
+
+      .switcher
+        @include xs
+          position: absolute
+          left: 50%
+          top: rem(40)
+          transform: translateX(-50%) rotate(90deg)
+          z-index: 1
+
+    .btn
+      @include xs
+        width: 100%
+
+  &__img
+    position: relative
+
+    @include md
+      max-width: rem(400)
+      width: 100%
+      margin: auto
+
+    @include sm
+      max-width: 100%
+
+    img
+      width: 100%
+
+      @include sm
+        display: none
+
+  .partners
+    position: absolute
+    width: 100%
+    bottom: rem(115)
+
+    @include sm
+      position: relative
+      bottom: auto
+      margin-top: rem(30)
+
+    .partners__slider-wrap
+      padding: rem(12) rem(25)
+      backdrop-filter: blur(4px)
+      background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.75) 24.32%, rgba(217, 217, 217, 0.75) 73.82%, rgba(217, 217, 217, 0) 100%)
+
+      @include sm
+        backdrop-filter: none
+        background-color: #d9d9d9

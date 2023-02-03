@@ -1,0 +1,93 @@
+.calculator
+  .tabs
+    background-color: $white
+    
+    @include md
+      margin-bottom: rem(30)
+    
+    @include xs
+      margin-bottom: rem(20)
+  
+  &__calculator
+    margin-top: rem(60)
+    border-radius: rem(24)
+    background-color: #F8F7FC
+    padding: rem(40) rem(65)
+
+    @media (max-width: 1400px)
+      margin-top: rem(55)
+      padding: rem(40)
+
+    @include lg
+      margin-top: rem(50)
+      border-radius: rem(12)
+      padding: rem(30)
+
+    @include sm
+      margin-top: rem(45)
+      padding: rem(30) rem(15)
+
+    @include xs
+      margin-top: rem(40)
+      padding: rem(20) rem(10)
+
+
+
+    .input-wrap
+      position: relative
+
+      @include lg
+        @include fww
+
+    .input,
+    .select
+      max-width: rem(330)
+      width: 100%
+      margin-right: rem(15)
+
+      @include lg
+        max-width: calc( 50% - 31px )
+        margin-right: 0
+
+    .input
+      @include lg
+        margin-bottom: rem(30)
+
+      @include xs
+        max-width: 100%
+        margin-top: rem(20)
+        margin-bottom: 0
+
+    .select
+      @include sm
+        max-width: 100%
+        margin: rem(20) 0
+
+    .switcher
+      margin-right: rem(15)
+
+      @include lg
+        margin: 0 rem(15)
+        margin-bottom: rem(30)
+
+      @include xs
+        margin: auto
+        transform:  translateX(-50%) 
+        position: absolute
+        left: 50%
+        top: rem(58)
+        z-index: 1
+
+        .icon
+          position: absolute
+          transform: rotate(90deg) 
+
+    .btn
+      max-width: 100%
+
+      @include lg
+        margin-left: rem(15)
+
+      @include sm
+        margin-left: 0
+        width: 100%

@@ -1,0 +1,184 @@
+.main-slider
+  margin-top: rem(60)
+  margin-bottom: rem(75)
+
+  @include lg
+    margin-top: rem(50)
+    margin-bottom: rem(60)
+
+  @include md
+    margin-top: rem(30)
+    margin-bottom: rem(30)
+  
+  &__slider
+    @include aistr-jfcsb
+
+    @include md
+      flex-direction: column
+    
+    &-col
+
+      &:first-child
+        width: calc( 70% - 20px )
+        display: flex
+        overflow: hidden
+        min-height: rem(293)
+        
+        @include lg
+          width: calc( 70% - 5px )
+        
+        @include md
+          width: 100%
+
+        @include xs
+          flex-direction: column  
+        
+        .main-slider__item
+          background-color: #F8F7FC
+          position: absolute
+          width: 100%
+          @include jfcsb
+          opacity: 0
+          transition: all 1s
+          
+          @include xs
+            flex-direction: column-reverse  
+
+          
+          &.show
+            display: flex
+            opacity: 1
+            z-index: 1
+            position: relative
+
+      &:last-child
+        width: calc( 30% - 20px )
+        
+        @include md
+          width: 100%
+          margin-top: rem(30)
+
+    &-txt
+      padding: rem(30)
+      width: 55%
+
+      @include lg
+        padding: rem(20)
+
+      @include xs
+        width: 100%  
+
+      .title
+        @include lg
+          font-size: rem(30)
+          line-height: rem(30)
+
+      .title,
+      p
+        margin-bottom: rem(30)
+
+        @include lg
+          margin-bottom: rem(20)
+
+      .btn
+        display: flex
+        border-radius: rem(24)
+        overflow: hidden
+
+        @include lg
+          border-radius: rem(12)
+
+    &-img
+      width: 45%
+      @include aic-jcc
+      position: relative
+      border-radius: rem(24)
+      overflow: hidden
+
+      @include lg
+        border-radius: rem(12)
+      
+      @include xs
+        width: 100%
+        height: rem(200)
+
+      &:before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: rgba($white, .15)
+
+      img
+        width: 100%
+        object-fit: cover
+        height: 100%
+
+  &__item
+    border-radius: rem(24)
+    overflow: hidden
+    height: 100%
+
+    @include lg
+      border-radius: rem(12)
+
+  #slider
+    position: relative
+    width: 100%
+
+.tracking-form
+  background-color: $accent
+  height: 100%
+  padding: rem(30)
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  @include lg
+    padding: rem(20)
+
+  .title,
+  p
+    color: $white
+    margin-bottom: rem(30)
+
+  .title
+    @include lg
+      font-size: rem(30)
+      line-height: rem(30)
+      margin-bottom: rem(20)
+
+  button
+    background: none
+    border: none
+    padding: 0
+    width: rem(30)
+    height: rem(30)
+    cursor: pointer
+    margin-left: rem(20)
+
+    .icon
+      width: 100%
+      height: 100%
+
+  &__form
+    &-wrap
+      @include aic
+
+    &-input
+      width: 100%
+
+      input
+        background: none
+        border: none
+        border-bottom: rem(1) solid rgba(224, 224, 224, 0.9)
+        padding: rem(9) 0
+        width: 100%
+        color: $white
+
+        &::placeholder
+          color: rgba(224, 224, 224, 0.9)

@@ -1,0 +1,121 @@
+.calculator.section
+  .container-lg 
+    h2.title Калькулятор  
+    p.subtitle Тут Вы можете рассчитать стоимость доставки 
+
+    .calculator__calculator
+      .tab
+        ul.tabs
+          li
+            a(href='#') Физ-лицо
+          li
+            a(href='#') Юр-лицо
+        .tab_content
+          .tabs_item
+            form(action="") 
+              .input-wrap
+                mixin input(place)
+                  .input
+                    input(type="text")
+                    label.label=place 
+                    .input__icon
+                      button
+                        svg.icon
+                          use(xlink:href='sprite.svg#search') 
+                +input('Откуда')
+                .switcher 
+                  svg.icon
+                    use(xlink:href='sprite.svg#switcher')
+                +input('Куда')
+                .select
+                  input(type="hidden" name="")
+                  label.label Размер (габариты посылки) 
+                  .select__selected
+                  .select__dropdown
+                    .tab_select
+                      ul.tabs_select
+                        li
+                          a(href='#') Точные размеры
+                        li
+                          a(href='#') Примерно
+
+                      .tab_content_select
+                        .tabs_item_select
+                          .select__list
+                            each size,index in sizes
+                              label(for="size"+(index+1)).select__list-item
+                                input(type="radio" value="size"+(index+1) name="размер" id="size"+(index+1)) 
+                                .select__list-item-img 
+                                  img(src="images/dist/"+size.img+".webp", alt="")
+                                .select__list-item-desc 
+                                  h2(data-title=size.title)=size.title 
+                                  span(data-size=size.size)=size.size 
+                                  p=size.desc 
+                        
+                        .tabs_item_select
+                          .input-wrap
+                            each place in['Длина, см','Ширина, см', 'Высота, см','Вес, кг']
+                              .input
+                                input(type="text")
+                                label.label=place  
+
+                  .input__icon
+                    svg.icon
+                      use(xlink:href='sprite.svg#angle-down-gray') 
+                a.btn(href="#") Рассчитать 
+          
+          .tabs_item
+            form(action="") 
+              .input-wrap
+                mixin input(place)
+                  .input
+                    input(type="text")
+                    label.label=place 
+                    .input__icon
+                      button
+                        svg.icon
+                          use(xlink:href='sprite.svg#search') 
+                +input('Откуда')
+                .switcher 
+                  svg.icon
+                    use(xlink:href='sprite.svg#switcher')
+                +input('Куда')
+                .select
+                  input(type="hidden" name="")
+                  label.label Размер (габариты посылки) 
+                  .select__selected                
+
+                  .select__dropdown
+                    .tab_select
+                      ul.tabs_select
+                        li
+                          a(href='#') Точные размеры
+                        li
+                          a(href='#') Примерно
+
+                      .tab_content_select
+                        .tabs_item_select
+                          .select__list
+                            each size,index in sizes
+                              label(for="size"+(index+1)).select__list-item
+                                input(type="radio" value="size"+(index+1) name="размер" id="size"+(index+1)) 
+                                .select__list-item-img 
+                                  img(src="images/dist/"+size.img+".webp", alt="")
+                                .select__list-item-desc 
+                                  h2(data-title=size.title)=size.title 
+                                  span(data-size=size.size)=size.size 
+                                  p=size.desc 
+                        
+                        .tabs_item_select
+                          .input-wrap
+                            each place in['Длина, см','Ширина, см', 'Высота, см','Вес, кг']
+                              .input
+                                input(type="text")
+                                label.label=place  
+
+                  .input__icon
+                    svg.icon
+                      use(xlink:href='sprite.svg#angle-down-gray') 
+                a.btn(href="#") Рассчитать 
+          
+          

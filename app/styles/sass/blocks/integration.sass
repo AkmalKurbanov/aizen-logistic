@@ -1,0 +1,36 @@
+.integration
+  p
+    font-size: rem(22)
+    line-height: rem(22)
+
+    @include lg
+      font-size: rem(20)
+      line-height: rem(20)
+
+    @include md
+      font-size: rem(18)
+      line-height: rem(18)
+
+    @include sm
+      font-size: rem(17)
+      line-height: rem(17)
+
+    @include xs
+      font-size: rem(16)
+      line-height: rem(16)
+
+  .tab
+    margin: rem(40) 0
+
+  &__banner
+    max-width: rem(960)
+    width: 100%
+    margin: rem(25) auto
+
+    @include xs
+      margin: rem(20) auto
+      
+
+    svg,
+    img
+      width: 100%

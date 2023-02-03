@@ -1,0 +1,109 @@
+.steps
+
+  &__wrap
+    @include fww-jfcsb
+    margin: rem(60) 0 rem(70)
+    counter-reset: section
+
+    @include lg
+      margin: rem(55) 0 rem(65)
+    
+    @include md
+      margin: rem(50) 0 rem(60)
+
+    @include sm
+      margin-top: 0
+      margin-bottom: rem(55)
+
+    @include xs
+      margin-bottom: rem(40)  
+
+
+  &__item
+    width: calc( 25% - 40px )
+    text-align: left
+    position: relative
+
+    @include lg
+      width: calc( 25% - 30px )
+
+    @include md
+      width: calc( 25% - 20px )
+      
+    @include sm
+      width: calc( 50% - 20px )
+      margin: rem(30) 0
+
+    @include xs
+      width: calc( 50% - 5px )
+
+    &:last-child
+      @include sm
+        margin-bottom: 0
+      .icon--arrow
+        display: none
+
+    &:before
+      position: absolute
+      counter-increment: section
+      content: counter(section) "."
+      left: 0
+      top: 0
+      font-size: rem(20)
+      font-weight: 700
+      color: $accent
+      display: none
+
+      @include sm
+        display: block
+
+.icon-block-wrap
+  display: flex
+  flex-wrap: wrap
+
+  .icon-block-item
+    .icon
+      width: rem(160)
+      height: rem(160)
+
+      @include xs
+        width: rem(120)
+        height: rem(120)
+
+      &--arrow
+        width: rem(60)
+        height: rem(60)
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+
+        @include md
+          width: rem(40)
+          height: rem(40)
+          right: rem(-20)
+
+        @include sm
+          display: none
+
+    p
+      max-width: rem(285)
+      width: 100%
+      font-size: rem(18)
+      line-height: rem(22)
+
+      @include lg
+        font-size: rem(17)
+        line-height: rem(21)
+
+      @include md
+        font-size: rem(16)
+        line-height: rem(20)
+
+      @include xs
+        max-width: 100%
+        font-size: rem(15)
+        line-height: rem(19)
+
+    .icon-block-icon
+      position: relative

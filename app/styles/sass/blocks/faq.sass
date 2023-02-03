@@ -1,0 +1,89 @@
+.faq
+  &__wrap
+    @include fww-jfcsb
+    margin-top: rem(70)
+
+    @include lg
+      margin-top: rem(65) 
+    
+    @include md
+      margin-top: rem(60) 
+
+    @include sm
+      margin-top: rem(55)
+
+    @include xs
+      margin-bottom: rem(40)  
+
+  &__item
+    text-align: left
+    width: calc( 50% - 35px )
+    border-bottom: rem(1) solid #6E627A
+    padding: rem(15) 0
+    position: relative
+
+    @include lg
+      width: calc( 50% - 15px )
+
+    @include xs
+      width: 100%  
+
+
+    .icon
+      width: rem(30)
+      height: rem(30)
+      position: absolute
+      right: 0
+      top: rem(20)
+      pointer-events: none
+      transition: $transition 
+
+      @include lg
+        top: rem(10)
+
+    &-title
+      font-size: rem(22)
+      color: $black
+      padding-right: rem(40)
+      cursor: pointer
+
+      @include lg
+        font-size: rem(18)
+        line-height: rem(19)
+        padding-right: rem(35)
+
+      @include md
+        font-size: rem(16)
+        line-height: rem(17)
+        padding-right: rem(30)
+      
+      @include sm
+        font-size: rem(15)
+        line-height: rem(16)
+        padding-right: rem(20)
+
+    &-drop
+      position: absolute
+      top: 0
+      transition: $transition 
+      opacity: 0
+      background-color: $white
+      box-shadow: 0px 2px 16px 4px rgba(0, 0, 0, 0.15)
+      width: 100%
+      padding: rem(15)
+      z-index: 1
+      border-radius: 0 0 rem(12) rem(12)
+      pointer-events: none
+      p
+        font-size: rem(16)
+        line-height: rem(22)
+
+    &.open
+      .faq__item-drop 
+        opacity: 1
+        top: 100%   
+        pointer-events: inherit
+
+
+      .icon
+        transform: rotate(180deg)   

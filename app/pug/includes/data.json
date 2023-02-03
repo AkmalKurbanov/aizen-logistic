@@ -1,0 +1,172 @@
+{
+  "sizes": [
+    {
+      "title": "Конверт",
+      "size": "42x35x5 см, до 2 кг",
+      "desc": "Маленькие предметы: документы, бижутерия, аксессуары",
+      "img": "envelope"
+    },
+    {
+      "title": "Коробка XS",
+      "size": "17x12x9 см, до 0.5 кг",
+      "desc": "Как коробка от смартфона: бижутерия, игрушки, гаджет",
+      "img": "box"
+    },
+    {
+      "title": "Коробка S",
+      "size": "23x19x10 см, до 2 кг",
+      "desc": "Как коробка от утюга",
+      "img": "box"
+    },
+    {
+      "title": "Коробка M",
+      "size": "33x25x15 см, до 5 кг",
+      "desc": "Чуть больше обувной коробки",
+      "img": "box"
+    },
+    {
+      "title": "Коробка L",
+      "size": "31x25x38 см, до 12 кг",
+      "desc": "Как коробка от микроволновки",
+      "img": "box"
+    },
+    {
+      "title": "Большая коробка, ящик",
+      "size": "60x60x30 см, до 20 кг",
+      "desc": "Набор посуды, домашний текстиль",
+      "img": "box"
+    },
+    {
+      "title": "Тележка",
+      "size": "100x100x50 см, до 50 кг",
+      "desc": "Большая посылка, например пылесос",
+      "img": "telejka"
+    },
+    {
+      "title": "Палета",
+      "size": "120x120x80 см, до 200 кг",
+      "desc": "Крупный груз: крупная бытовая техника, домашняя библиотека",
+      "img": "paleta"
+    }
+  ],
+  "footerNav": [
+    {
+      "title": "О компании",
+      "footerNavInside": [
+        {
+          "item": "Новости"
+        },
+        {
+          "item": "Вопрос/ответ"
+        },
+        {
+          "item": "Контакты"
+        },
+        {
+          "item": "Вакансии"
+        }
+      ]
+    },
+    {
+      "title": "Отправить посылку",
+      "footerNavInside": [
+        {
+          "item": "Отследить посылку"
+        },
+        {
+          "item": "Вызвать курьера"
+        },
+        {
+          "item": "Отправить посылку"
+        }
+      ]
+    },
+    {
+      "title": "Интернет-магазинам",
+      "footerNavInside": [
+        {
+          "item": "Доставка"
+        },
+        {
+          "item": "Фулфилмент"
+        },
+        {
+          "item": "Интеграции"
+        }
+      ]
+    },
+    {
+      "title": "Корпоративным клиентам",
+      "footerNavInside": [
+        {
+          "item": "Доставка"
+        },
+        {
+          "item": "Грузовые перевозки"
+        },
+        {
+          "item": "Складская логистика"
+        }
+      ]
+    },
+    {
+      "title": "Стать партнером",
+      "footerNavInside": ""
+    },
+    {
+      "title": "Самозанятым",
+      "footerNavInside": ""
+    }
+  ],
+  "socials": [
+    {
+      "img": "discord",
+      "link": "#"
+    },
+    {
+      "img": "telegram",
+      "link": "#"
+    },
+    {
+      "img": "linkedin",
+      "link": "#"
+    },
+    {
+      "img": "instagram",
+      "link": "#"
+    },
+    {
+      "img": "youtube",
+      "link": "#"
+    },
+    {
+      "img": "twitter",
+      "link": "#"
+    }
+  ],
+  "cargoAdvantages": [
+    {
+      "title": "700+ Направлений",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "title": "Конкурентная среда",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "title": "Онлайн трекинг",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "title": "Застрахованный трип",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+  ],
+  "langs": [
+    { "lang": "Кыргыз тили", "flag": "kg", "link": "#" },
+    { "lang": "Türkçe", "flag": "tr", "link": "#" },
+    { "lang": "English", "flag": "uk", "link": "#" },
+    { "lang": "Deutsch", "flag": "de", "link": "#" },
+    { "lang": "Русский", "flag": "ru", "link": "#" }
+  ]
+}

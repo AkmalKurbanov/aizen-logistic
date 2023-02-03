@@ -1,0 +1,97 @@
+extends layouts/main
+block title
+  | cargo
+block main
+  .wrapper
+    .content
+      include includes/header
+      
+      .hero.hero--full.cargo
+        .container
+          .hero__wrap 
+            .hero__col
+              h2.title Ваше Решение <br>
+                | В 
+                span Поставках 
+                | под Ключ 
+              p Aizen Логистика работает со всеми <br> основными сервисами  
+              .cargo__form 
+                h2 Забронируй свой грузовик
+                form(action="") 
+                  .input-wrap
+                    mixin input(place)
+                      .input
+                        input(type="text")
+                        label.label=place 
+                        .input__icon
+                          button
+                            svg.icon
+                              use(xlink:href='sprite.svg#search') 
+                    +input('Откуда')
+                    .switcher 
+                      svg.icon
+                        use(xlink:href='sprite.svg#switcher')
+                    +input('Куда')
+                  .input-wrap
+                    +input('Откуда')
+                    +input('Куда')
+                  .tar 
+                    .btn.btn--secondary.button(type="submit") Забронировать  
+            .hero__col 
+              .cargo__img
+                img(src="images/dist/cargo.webp", alt="")
+
+                include includes/partners
+       
+       
+      .cargo-advantages.section
+        .container 
+          h2.title.tac Правильный 
+            span Партнер 
+            | по <br>
+            span Грузоперевозкам 
+            | для Вашего Бизнеса
+          
+          .cargo-advantages__wrap
+            each advantage, index in cargoAdvantages
+              .cargo-advantages__item
+                .cargo-advantages__item-icon 
+                  svg.icon
+                    use(xlink:href='sprite.svg#cargo-advantage'+(index+1))
+                .cargo-advantages__item-title
+                  b=advantage.title 
+                .cargo-advantages__item-desc=advantage.desc 
+      .container
+        .col-wrap-2
+          .col
+            h2.title Ваш Надежный и Проверенный Поставщик 
+              span Транспортных 
+              | Услуг  
+          .col 
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            br
+            a.btn.btn--secondary(href="#") Забронировать 
+
+        .video.section
+          .video__wrap
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/C7dbCrsf0l4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+            //- .video__preview
+            //-   img(src="images/dist/preview.webp", alt="")
+            //- video(controls)#video 
+            //-   source(src="images/src/video.mp4" type="video/mp4")
+            //-   source(src="movie.ogg" type="video/ogg")
+            //- .video-button
+            //-   svg
+            //-     use(xlink:href='sprite.svg#play')
+
+      include includes/steps     
+      include includes/faq     
+
+
+
+      
+
+    include includes/footer
+
+
+  include includes/scripts 

@@ -1,0 +1,89 @@
+.cargo-advantages
+
+  &__wrap
+    margin-top: rem(60)
+    @include aifs-jfcsb
+    flex-wrap: wrap
+
+  &__item
+    padding: rem(40) rem(25)
+    text-align: center
+    background-color: $accent
+    transition: $transition
+    border-radius: rem(24)
+    color: $white
+    font-size: rem(20)
+    line-height: rem(22)
+    width: calc( 25% - 18px )
+
+    @include lg
+      border-radius: rem(12)
+      font-size: rem(16)
+      line-height: rem(18)
+      width: calc( 25% - 10px )
+      padding: rem(35) rem(15)
+
+    @include md
+      padding: rem(30) rem(10)
+      width: calc( 50% - 10px )
+      margin-bottom: rem(20)
+
+    @include xs
+      width: 100%
+
+
+    &-icon
+      width: rem(72)
+      height: rem(72)
+      border-radius: 100%
+      background-color: $white
+      overflow: hidden
+      @include aic-jcc
+      margin: auto
+      margin-bottom: rem(25)
+      transition: $transition
+      
+      @include lg
+        width: rem(65)
+        height: rem(65)
+        margin-bottom: rem(20)
+
+
+      .icon
+        fill: none
+        stroke: $accent
+        transition: $transition
+        width: 100%
+        height: 100%
+
+    &-title
+      margin-bottom: rem(20)
+
+      @include lg
+        margin-bottom: rem(17)
+
+      @include md
+        margin-bottom: rem(14)
+
+      @include sm
+        margin-bottom: rem(11)
+
+      @include xs
+        margin-bottom: rem(8)
+    
+    &-desc
+      max-width: rem(300)
+      width: 100%
+      margin: auto
+    &:hover
+      background-color: $secondary
+      color: $accent
+
+      .cargo-advantages__item-icon
+        background-color: $accent
+
+      .icon
+        stroke: $white
+
+
+    

@@ -1,0 +1,255 @@
+.header
+  padding: rem(30) 0 rem(15)
+
+  @include md
+    padding: rem(15) 0
+
+  @include xs
+    padding: rem(10) 0
+
+  &__wrap
+    @include aic-jfcsb
+
+  &__logo
+    max-width: rem(120)
+    height: rem(50)
+    margin-right: rem(30)
+
+    @include xs
+      max-width: rem(100)
+      height: rem(30)
+
+    .icon
+      width: 100%
+      height: 100%
+
+  &__nav
+    width: 100%
+    @include aic-jcc
+
+    @include lg
+      display: none
+
+    ul
+      @include aic-jcc
+      width: 100%
+
+      li
+        // margin-right: rem(62)
+        margin-right: 7%
+
+        a
+          color: $black
+          transition: $transition
+          font-size: rem(18)
+
+          @media (max-width: 1600px)
+            font-size: rem(16)
+
+          &:hover
+            color: $accent
+
+        &:last-child
+          margin-right: 0
+
+  &__control
+    @include aic
+
+    .btn
+      margin-left: rem(30)
+
+      @include xs
+        display: none
+
+  &__lang
+    margin-right: rem(25)
+    position: relative
+    z-index: 9
+    height: 100%
+    @include aic
+
+    @include xs
+      margin-right: rem(20)
+
+    &.open
+
+      .header__lang-dropdown
+        top: 100%
+        opacity: 1
+        pointer-events: inherit
+        z-index: 9
+        background: rgba(69,69,69,.9)
+
+        @include xs
+          top: 0!important
+      p
+        color: $white
+
+      .icon
+        transform: translateY(-50%) rotate(180deg)
+        stroke: $white
+
+    &-list
+      @include fww-jfcsb
+
+  &__lang-seleced
+    position: relative
+    padding: rem(10) rem(20)
+    cursor: pointer
+    @include aic-jcc
+    z-index: 999
+    height: 100%
+
+    @include xs
+      padding: rem(5) rem(20)
+
+    &:hover
+      .icon
+        stroke: $secondary
+
+    img
+      max-width: rem(26)
+      min-width: rem(26)
+      width: 100%
+
+    .icon
+      position: absolute
+      stroke: $textcolor
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+      transition: $transition
+      width: rem(17)
+      height: rem(17)
+
+  &__lang-dropdown
+    padding: rem(12)
+    min-width: rem(290)
+    max-width: rem(290)
+    position: absolute
+    opacity: 0
+    transition: $transition
+    pointer-events: none
+    top: 50%
+    border-radius: rem(12)
+    right: rem(-20)
+    backdrop-filter: blur(16px)
+
+    @include lg
+      right: rem(-15)
+      left: auto
+
+      &:before
+        left: auto!important
+        right: rem(12)
+
+    @include xs
+      position: fixed!important
+      width: 100%!important
+      height: 100%!important
+      top: -100%!important
+      right: 0!important
+      left: 0!important
+      max-width: 100%
+      border-radius: 0!important
+      padding-top: rem(70)
+
+    img
+      width: 100%
+
+    p
+      margin-bottom: rem(20)
+      text-align: center
+      font-size: rem(15)
+
+  &__lang-item
+    margin-bottom: rem(20)
+    width: 49%
+
+    img
+      max-width: rem(26)
+      min-width: rem(26)
+
+    a
+      @include aic
+      color: $white
+      transition: $transition
+
+      &:hover
+        color: $secondary
+
+  &__lang-name
+    text-align: center
+    margin-left: rem(5)
+    font-size: rem(14)
+
+  &__user-control
+    @include aic
+    margin-right: rem(15)
+    @include lg
+      display: none
+
+    *
+      color: $textcolor
+      transition: $transition
+
+    &:hover
+
+      *
+        color: $white
+        stroke: $white
+
+.hamburger
+  width: rem(25)
+  height: rem(15)
+  @include aic-jcc
+  cursor: pointer
+  position: relative
+  display: none
+  z-index: 10
+
+  @include lg
+    display: flex
+
+  &:before,
+  &:after
+    position: absolute
+    content: ''
+    width: 100%
+    height: rem(1)
+    background-color: $accent
+    transition: $transition
+
+  &:before
+    top: 0
+
+  &:after
+    bottom: 0
+
+  span
+    display: block
+    position: relative
+    width: 100%
+    height: rem(1)
+    background-color: $accent
+    transition: $transition
+
+  &.open
+    &:before
+      top: 50%
+      transform: translateY(-50%) rotate(45deg)
+      background-color: $white
+    &:after
+      top: 50%
+      transform: translateY(-50%) rotate(-45deg)
+      background-color: $white
+    span
+      opacity: 0
+      transform: translateX(-20px)
+      background-color: $white
+
+  &.accent
+    span,
+    &:before,
+    &:after
+      background-color: $white

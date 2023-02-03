@@ -1,0 +1,21 @@
+.menu
+  .menu__logo
+    a(href="#")
+      svg.icon
+        use(xlink:href='sprite.svg#logoMenu')  
+  .menu__nav 
+    ul 
+      each nav in['Отправить посылку','Бизнес клиентам','Шоппинг','О компании','Контакты']      
+        li 
+          a(href="#")=nav 
+
+    a(href="#").btn Оставить заявку
+
+  .socials
+    ul 
+      each social in socials 
+        li 
+          a(href="#")
+            svg
+              use(xlink:href='sprite.svg#'+social.img)
+      

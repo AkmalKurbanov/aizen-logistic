@@ -1,0 +1,13 @@
+.advantages.section
+  .container-lg 
+    h2.title Наши преимущества:
+    
+    .advantages__wrap
+      
+      each advantage,index in['Бесконтактная курьерская доставка с помощью кода подтверждения и оплаты по ссылке в SMS','Круглосуточно доступные постаматы в охраняемой зоне отделений Aizen','Оптимальные сроки доставки','Пункты приема и выдачи посылок рядом с вами в отделениях Aizen','Собственные склады, транспорт, курьерские службы и прямые договоры с авиакомпаниями','Доступность в 26 000 населенных пунктах'] 
+        .advantages__item 
+          .advantages__item-icon 
+            svg.icon
+              use(xlink:href='sprite.svg#advantage'+(index+1)) 
+          .advantages__item-desc=advantage
+

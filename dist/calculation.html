@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculation
+    </title>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  </head>
+</html>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header"> 
+        <div class="container-lg"> 
+          <div class="header__wrap">
+            <div class="header__logo"> <a href="#">
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#logoHeader"> </use>
+                </svg></a></div>
+            <div class="header__nav"> 
+              <ul> 
+                <li> <a href="#">Отправить посылку</a></li>
+                <li> <a href="#">Бизнес клиентам</a></li>
+                <li> <a href="#">Шоппинг</a></li>
+                <li> <a href="#">О компании</a></li>
+                <li> <a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header__control"><a class="btn" href="#">Оставить заявку</a>
+              <div class="header__lang">
+                <div class="header__lang-seleced"> <img loading="lazy" src="images/dist/kg.webp" alt="">
+                  <svg class="icon">
+                    <use xlink:href="sprite.svg#angle-down-lang"></use>
+                  </svg>
+                </div>
+                <div class="header__lang-dropdown">
+                  <p>Выберите язык</p>
+                  <div class="header__lang-list">
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/kg.webp" alt="">
+                        <div class="header__lang-name">Кыргыз тили</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/tr.webp" alt="">
+                        <div class="header__lang-name">Türkçe</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/uk.webp" alt="">
+                        <div class="header__lang-name">English</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/de.webp" alt="">
+                        <div class="header__lang-name">Deutsch</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/ru.webp" alt="">
+                        <div class="header__lang-name">Русский</div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hamburger"> <span>            </span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="calculation">
+        <div class="container-lg">
+          <div class="calculation__wrap">
+            <div class="calculation__col">
+              <h2 class="title">Параметры доставки</h2>
+              <div class="input-wrap">
+                                <div class="input">
+                                  <input type="text">
+                                  <label class="label">Откуда</label>
+                                  <div class="input__icon">
+                                    <button>
+                                      <svg class="icon">
+                                        <use xlink:href="sprite.svg#search"> </use>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                </div>
+                <div class="switcher"> 
+                  <svg class="icon">
+                    <use xlink:href="sprite.svg#switcher"></use>
+                  </svg>
+                </div>
+                                <div class="input">
+                                  <input type="text">
+                                  <label class="label">Куда</label>
+                                  <div class="input__icon">
+                                    <button>
+                                      <svg class="icon">
+                                        <use xlink:href="sprite.svg#search"> </use>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                </div>
+              </div>
+              <div class="calculation__parcel">
+                <h2 class="title">Информация о посылке</h2>
+                <div class="calculation__parcel-info">
+                  <div class="calculation__parcel-col"> 
+                    <div class="input">
+                      <input type="text">
+                      <label class="label">Объявленная ценность</label>
+                    </div>
+                    <p class="calculation__desc">От 0 до 200 000 ₽, влияет на стоимость доставки и размер компенсации за утерю или повреждение посылки. Указывайте только реальную стоимость.  </p>
+                  </div>
+                  <div class="calculation__parcel-col"> 
+                    <div class="select">
+                      <input type="hidden" name="">
+                      <label class="label">Размер посылки </label>
+                      <div class="select__selected"></div>
+                      <div class="select__dropdown">
+                        <div class="tab_select">
+                          <ul class="tabs_select">
+                            <li><a href="#">Точные размеры</a></li>
+                            <li><a href="#">Примерно</a></li>
+                          </ul>
+                          <div class="tab_content_select">
+                            <div class="tabs_item_select">
+                              <div class="select__list">
+                                <label class="select__list-item" for="size1">
+                                  <input type="radio" value="size1" name="размер" id="size1">
+                                  <div class="select__list-item-img"> <img src="images/dist/envelope.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Конверт">Конверт</h2><span data-size="42x35x5 см, до 2 кг">42x35x5 см, до 2 кг</span>
+                                    <p>Маленькие предметы: документы, бижутерия, аксессуары</p>
+                                  </div>
+                                </label>
+                                <label class="select__list-item" for="size2">
+                                  <input type="radio" value="size2" name="размер" id="size2">
+                                  <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Коробка XS">Коробка XS</h2><span data-size="17x12x9 см, до 0.5 кг">17x12x9 см, до 0.5 кг</span>
+                                    <p>Как коробка от смартфона: бижутерия, игрушки, гаджет</p>
+                                  </div>
+                                </label>
+                                <label class="select__list-item" for="size3">
+                                  <input type="radio" value="size3" name="размер" id="size3">
+                                  <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Коробка S">Коробка S</h2><span data-size="23x19x10 см, до 2 кг">23x19x10 см, до 2 кг</span>
+                                    <p>Как коробка от утюга</p>
+                                  </div>
+                                </label>
+                                <label class="select__list-item" for="size4">
+                                  <input type="radio" value="size4" name="размер" id="size4">
+                                  <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Коробка M">Коробка M</h2><span data-size="33x25x15 см, до 5 кг">33x25x15 см, до 5 кг</span>
+                                    <p>Чуть больше обувной коробки</p>
+                                  </div>
+                                </label>
+                                <label class="select__list-item" for="size5">
+                                  <input type="radio" value="size5" name="размер" id="size5">
+                                  <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Коробка L">Коробка L</h2><span data-size="31x25x38 см, до 12 кг">31x25x38 см, до 12 кг</span>
+                                    <p>Как коробка от микроволновки</p>
+                                  </div>
+                                </label>
+                                <label class="select__list-item" for="size6">
+                                  <input type="radio" value="size6" name="размер" id="size6">
+                                  <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Большая коробка, ящик">Большая коробка, ящик</h2><span data-size="60x60x30 см, до 20 кг">60x60x30 см, до 20 кг</span>
+                                    <p>Набор посуды, домашний текстиль</p>
+                                  </div>
+                                </label>
+                                <label class="select__list-item" for="size7">
+                                  <input type="radio" value="size7" name="размер" id="size7">
+                                  <div class="select__list-item-img"> <img src="images/dist/telejka.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Тележка">Тележка</h2><span data-size="100x100x50 см, до 50 кг">100x100x50 см, до 50 кг</span>
+                                    <p>Большая посылка, например пылесос</p>
+                                  </div>
+                                </label>
+                                <label class="select__list-item" for="size8">
+                                  <input type="radio" value="size8" name="размер" id="size8">
+                                  <div class="select__list-item-img"> <img src="images/dist/paleta.webp" alt=""></div>
+                                  <div class="select__list-item-desc"> 
+                                    <h2 data-title="Палета">Палета</h2><span data-size="120x120x80 см, до 200 кг">120x120x80 см, до 200 кг</span>
+                                    <p>Крупный груз: крупная бытовая техника, домашняя библиотека</p>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="tabs_item_select">
+                              <div class="input-wrap">
+                                <div class="input">
+                                  <input type="text">
+                                  <label class="label">Длина, см</label>
+                                </div>
+                                <div class="input">
+                                  <input type="text">
+                                  <label class="label">Ширина, см</label>
+                                </div>
+                                <div class="input">
+                                  <input type="text">
+                                  <label class="label">Высота, см</label>
+                                </div>
+                                <div class="input">
+                                  <input type="text">
+                                  <label class="label">Вес, кг</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input__icon">
+                        <svg class="icon">
+                          <use xlink:href="sprite.svg#angle-down-gray"> </use>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="calculation__desc">
+                      Максимальные размеры посылки для услуги СберПосылка: отделения Сбера - 60*60*60 см, Постамат - 60*36*36см, вес до 10кг. <br>Максимальные размеры посылки для услуги СберКурьер (Д+Ш+В) — не более 300 см, максимальная длина одной стороны — 150 см, вес до 10 кг.</p>
+                  </div>
+                  <div class="calculation__parcel-col">
+                    <div class="input">
+                      <input type="text">
+                      <label class="label">Вес </label>
+                    </div>
+                    <p class="calculation__desc">Указанный вес влияет на стоимость доставки. Максимальный вес до 10 кг. Обратите внимание — доставка посылок максимального размера возможна не во все постаматы.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculation__col">
+              <h2 class="title">Стоимость доставки</h2>
+              <div class="calculation__tabs">
+                <div class="tab">
+                  <ul class="tabs">
+                    <li><a href="#">Авто Доставка</a></li>
+                    <li><a href="#">Авиа Доставка</a></li>
+                  </ul>
+                  <div class="tab_content">
+                    <div class="tabs_item">
+                      <div class="calculation__tabs-top">
+                        <p>Доставка от пункта приема до пункта выдачи, 1 - 2 рабочих дня</p><span>*Без учета дня приема</span>
+                      </div>
+                      <div class="calculation__tabs-bottom">
+                        <p>540
+                          <u>C</u>
+                        </p><a class="btn btn--secondary" href="#">Оформить посылку</a>
+                      </div>
+                    </div>
+                    <div class="tabs_item"> 
+                      <div class="calculation__tabs-top">
+                        <p>Доставка от пункта приема до пункта выдачи, 5 - 7 рабочих дня</p><span>*Без учета дня приема</span>
+                      </div>
+                      <div class="calculation__tabs-bottom">
+                        <p>746
+                          <u>C</u>
+                        </p><a class="btn btn--secondary" href="#">Оформить посылку</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="calculation__price-list"> 
+                <h2 class="title">Фирменная коробка:</h2>
+                <h3 class="subtitle">Оплачивается в пункте приема</h3>
+                <table>
+                  <tr>
+                    <td>Размер:</td>
+                    <td><b>26 × 18 × 9</b></td>
+                    <td><b>30 × 23 × 16</b></td>
+                    <td><b>43 × 32 × 19</b></td>
+                    <td><b>42 × 36 × 27</b></td>
+                  </tr>
+                  <tr>
+                    <td>Цена:</td>
+                    <td>
+                      <div class="table-flex-container"><span>30 С</span><span>S</span></div>
+                    </td>
+                    <td>
+                      <div class="table-flex-container"><span>50 С</span><span>M</span></div>
+                    </td>
+                    <td>
+                      <div class="table-flex-container"><span>70 С</span><span>L</span></div>
+                    </td>
+                    <td>
+                      <div class="table-flex-container"><span>120 С</span><span>XL</span></div>
+                    </td>
+                  </tr>
+                </table>
+                <h2 class="title tar">Бесплатная упаковка:</h2>
+                <h3 class="subtitle tar">Курьерский пакет, картонный конверт, собственная упаковка</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg">
+      <div class="rotare-elem-wrap">
+        <div class="rotare-elem">
+          <svg class="icon">
+            <use xlink:href="sprite.svg#rotateElem"> </use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container-lg"> 
+          <p>Бытует мнение, что оптимизированные тексты могут быть либо плохими, либо совсем плохими. Без вариантов. Это глупое поверье пришло к нам из прошлого, когда примеры SEO-текстов достойного качества встречались крайне редко. Сегодня все изменилось. У копирайтера с головой и руками всегда есть шансы создать небольшой шедевр. Текст, который будет не только нравиться поисковикам, но и читателям. Сегодня, с помощью материалов от агентства Text iS, я покажу вам другую сторону оптимизации. Светлую. Давайте познакомимся с образцами продающих и информационных SEO-текстов, которым по силам пробиваться в ТОП и одновременно – распахивать кошельки читателей. Когда я только собирался писать про сон на пчелах, конкуренция по ключевым запросам уже была немаленькая. В то, что запросы выйдут в ТОП, я верил, но драка предстояла не шуточная. Клиенты же и вовсе просили «написать просто хороший текст». В итоге – и оптимизация текста лендинга сыграла свою роль (сайт на первых местах), и сам материал вышел неплохим. И снова образец правильно оптимизированного текста на главную страницу. На этот раз мы имеем дело с сайтом, предлагающим одежду для верующих женщин. Если почитаете материал, то увидите, что ключей там достаточно. А поскольку семантическое ядро собрано верно и ключи вполне органичные, запросы не слишком режут глаз. Итог – SEO-текст во всех возможных ТОП и достаточно легко читается.</p>
+          <div class="footer__nav">
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">О компании</a>
+              <ul>
+                <li> <a href="#">Новости</a></li>
+                <li> <a href="#">Вопрос/ответ</a></li>
+                <li> <a href="#">Контакты</a></li>
+                <li> <a href="#">Вакансии</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Отправить посылку</a>
+              <ul>
+                <li> <a href="#">Отследить посылку</a></li>
+                <li> <a href="#">Вызвать курьера</a></li>
+                <li> <a href="#">Отправить посылку</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Интернет-магазинам</a>
+              <ul>
+                <li> <a href="#">Доставка</a></li>
+                <li> <a href="#">Фулфилмент</a></li>
+                <li> <a href="#">Интеграции</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Корпоративным клиентам</a>
+              <ul>
+                <li> <a href="#">Доставка</a></li>
+                <li> <a href="#">Грузовые перевозки</a></li>
+                <li> <a href="#">Складская логистика</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Стать партнером</a>
+              <ul>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Самозанятым</a>
+              <ul>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__control">
+            <div class="footer__lang lang"><span>Русский</span>
+              <svg class="icon">
+                <use xlink:href="sprite.svg#angle-down-gray"></use>
+              </svg>
+              <ul> 
+                <li> <a href="#">Русский</a></li>
+                <li> <a href="#">English</a></li>
+                <li> <a href="#">Кыргыз тили</a></li>
+                <li> <a href="#">Türkçe</a></li>
+                <li> <a href="#">Deutsch</a></li>
+              </ul>
+            </div>
+            <div class="footer__social socials">
+              <ul> 
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#discord"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#telegram"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#linkedin"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#youtube"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#twitter"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"> 
+        <p>
+          © 2023 AIZEN LLC.Компания AIZEN LLC, зарегистрированный в Кыргызской Республике. Юридический адрес: ул. Кызыл-кийская 186, 720072, г. Бишкек, Кыргызстан (рег. №: 190058-3301-ООО). <br>AIZEN LLC в процессе получения лицензии платежной системы и оператора платежных систем НБКР. AIZEN LLC предоставляет услуги по осуществлению платежей и открытию цифровых кошельков до востребования.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.min.js"> </script>
+  <div class="menu">
+    <div class="menu__logo"><a href="#">
+        <svg class="icon">
+          <use xlink:href="sprite.svg#logoMenu"> </use>
+        </svg></a></div>
+    <div class="menu__nav"> 
+      <ul> 
+        <li> <a href="#">Отправить посылку</a></li>
+        <li> <a href="#">Бизнес клиентам</a></li>
+        <li> <a href="#">Шоппинг</a></li>
+        <li> <a href="#">О компании</a></li>
+        <li> <a href="#">Контакты</a></li>
+      </ul><a class="btn" href="#">Оставить заявку</a>
+    </div>
+    <div class="socials">
+      <ul> 
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#discord"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#telegram"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#linkedin"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#instagram"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#youtube"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#twitter"></use>
+            </svg></a></li>
+      </ul>
+    </div>
+  </div>
+</body>

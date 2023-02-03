@@ -1,0 +1,147 @@
+extends layouts/main
+block title
+  | calculation
+block main
+  .wrapper
+    .content
+      include includes/header
+      
+      .calculation
+        .container-lg
+          .calculation__wrap
+            .calculation__col
+              h2.title Параметры доставки
+              .input-wrap
+                mixin input(place)
+                  .input
+                    input(type="text")
+                    label.label=place 
+                    .input__icon
+                      button
+                        svg.icon
+                          use(xlink:href='sprite.svg#search') 
+                +input('Откуда')
+                .switcher 
+                  svg.icon
+                    use(xlink:href='sprite.svg#switcher')
+                +input('Куда')
+
+              .calculation__parcel
+                h2.title Информация о посылке
+                .calculation__parcel-info
+                  
+                  .calculation__parcel-col 
+                    .input
+                      input(type="text")
+                      label.label Объявленная ценность
+                    p.calculation__desc От 0 до 200 000 ₽, влияет на стоимость доставки и размер компенсации за утерю или повреждение посылки. Указывайте только реальную стоимость.  
+                  
+                  .calculation__parcel-col 
+                    .select
+                      input(type="hidden" name="")
+                      label.label Размер посылки 
+                      .select__selected
+                      .select__dropdown
+                        .tab_select
+                          ul.tabs_select
+                            li
+                              a(href='#') Точные размеры
+                            li
+                              a(href='#') Примерно
+
+                          .tab_content_select
+                            .tabs_item_select
+                              .select__list
+                                each size,index in sizes
+                                  label(for="size"+(index+1)).select__list-item
+                                    input(type="radio" value="size"+(index+1) name="размер" id="size"+(index+1)) 
+                                    .select__list-item-img 
+                                      img(src="images/dist/"+size.img+".webp", alt="")
+                                    .select__list-item-desc 
+                                      h2(data-title=size.title)=size.title 
+                                      span(data-size=size.size)=size.size 
+                                      p=size.desc 
+                            
+                            .tabs_item_select
+                              .input-wrap
+                                each place in['Длина, см','Ширина, см', 'Высота, см','Вес, кг']
+                                  .input
+                                    input(type="text")
+                                    label.label=place  
+
+                      .input__icon
+                        svg.icon
+                          use(xlink:href='sprite.svg#angle-down-gray') 
+
+                    p.calculation__desc Максимальные размеры посылки для услуги СберПосылка: отделения Сбера - 60*60*60 см, Постамат - 60*36*36см, вес до 10кг. <br>
+                      | Максимальные размеры посылки для услуги СберКурьер (Д+Ш+В) — не более 300 см, максимальная длина одной стороны — 150 см, вес до 10 кг.
+
+                  .calculation__parcel-col
+                    .input
+                      input(type="text")
+                      label.label Вес 
+                    p.calculation__desc Указанный вес влияет на стоимость доставки. Максимальный вес до 10 кг. Обратите внимание — доставка посылок максимального размера возможна не во все постаматы.
+            
+            .calculation__col
+              h2.title Стоимость доставки
+              .calculation__tabs
+                .tab
+                  ul.tabs
+                    li
+                      a(href='#') Авто Доставка
+                    li
+                      a(href='#') Авиа Доставка
+
+                  .tab_content
+                    .tabs_item
+                      
+                      .calculation__tabs-top
+                        p Доставка от пункта приема до пункта выдачи, 1 - 2 рабочих дня
+                        span *Без учета дня приема
+                      
+                      .calculation__tabs-bottom
+                        p 540
+                          u C
+                        a.btn.btn--secondary(href="#") Оформить посылку
+                    .tabs_item 
+                      .calculation__tabs-top
+                        p Доставка от пункта приема до пункта выдачи, 5 - 7 рабочих дня
+                        span *Без учета дня приема
+                      .calculation__tabs-bottom
+                        p 746
+                          u C
+                        a.btn.btn--secondary(href="#") Оформить посылку
+
+              .calculation__price-list 
+                h2.title Фирменная коробка:
+                h3.subtitle Оплачивается в пункте приема
+                table
+                  tr
+                    td Размер:
+                    each td in['26 × 18 × 9','30 × 23 × 16','43 × 32 × 19','42 × 36 × 27'] 
+                      td
+                        b=td
+
+                  tr
+                    td Цена:
+                    each td in [{"price":"30 С","size":"S"},{"price":"50 С","size":"M"},{"price":"70 С","size":"L"},{"price":"120 С","size":"XL"}]  
+                      td
+                        .table-flex-container
+                          span=td.price
+                          span=td.size
+                
+                h2.title.tar Бесплатная упаковка:
+                h3.subtitle.tar Курьерский пакет, картонный конверт, собственная упаковка
+
+
+      
+    .container-lg
+      .rotare-elem-wrap
+        .rotare-elem
+          svg.icon
+            use(xlink:href='sprite.svg#rotateElem')  
+      
+    include includes/footer
+
+
+  include includes/scripts 

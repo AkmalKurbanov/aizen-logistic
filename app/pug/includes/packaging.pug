@@ -1,0 +1,48 @@
+.packaging.section
+  .container-lg 
+    h2.title Как упаковать посылку в зависимости от <br> типа отправления
+    
+    .packaging__wrap
+      .col-wrap-3
+        .col
+          div
+            .packaging__title В отделениях Aizen
+            ul 
+              li — Сотрудник предоставит фирменную упаковку и поможет правильно упаковать
+          a(href="#") Правила упаковки хрупких товаров  
+        .col
+          div
+            .packaging__title Правила упаковки хрупких товаров
+            ul 
+              li — Необходимо заранее упаковать посылку самостоятельно, с учетом правил Aizen Logistics
+          a(href="#") Правила упаковки хрупких товаров  
+
+        .col
+          div
+            .packaging__title Отправка Курьером
+            ul 
+              li — Курьер предоставит фирменный пакет и конверт
+              li — Передайте посылку в своей упаковке, ориентируясь на правила СберКурьера
+          a(href="#") Правила упаковки хрупких товаров  
+
+    .packaging__delivery
+      mixin kind(title,price,icon,desc1,desc2,desc3,width,height)
+        .packaging__delivery-kind
+          .packaging__delivery-kind-top
+            .packaging__delivery-kind-title=title
+            .packaging__delivery-kind-price
+              | от 
+              =price 
+              |  сом
+          .packaging__delivery-kind-bottom
+            .packaging__delivery-kind-icon 
+              svg(width=width height=height)
+                use(xlink:href='sprite.svg#delivery-kind'+icon)
+            .packaging__delivery-kind-desc
+              ul 
+                li=desc1 
+                li=desc2 
+                li=desc3 
+      
+      +kind('Авто - Доставка','615','1','Курьерская доставка от двери до двери по России.','Вес: до 10 кг.','Размеры - одна сторона не более 150 см, сумма длин всех сторон - 300 см.',200,120)
+      +kind('Авиа - Доставка','250','2','Доставка отправлений от пункта приема до пункта выдачи по Кыргызстану.','Максимальные габариты : отделения Сбера - 60×60×60 см, вес до 10 кг, Постамат - 60×36×36 см, вес до 10 кг.','',110)

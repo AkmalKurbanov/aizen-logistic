@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main
+    </title>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  </head>
+</html>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header"> 
+        <div class="container-lg"> 
+          <div class="header__wrap">
+            <div class="header__logo"> <a href="#">
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#logoHeader"> </use>
+                </svg></a></div>
+            <div class="header__nav"> 
+              <ul> 
+                <li> <a href="#">Отправить посылку</a></li>
+                <li> <a href="#">Бизнес клиентам</a></li>
+                <li> <a href="#">Шоппинг</a></li>
+                <li> <a href="#">О компании</a></li>
+                <li> <a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header__control"><a class="btn" href="#">Оставить заявку</a>
+              <div class="header__lang">
+                <div class="header__lang-seleced"> <img loading="lazy" src="images/dist/kg.webp" alt="">
+                  <svg class="icon">
+                    <use xlink:href="sprite.svg#angle-down-lang"></use>
+                  </svg>
+                </div>
+                <div class="header__lang-dropdown">
+                  <p>Выберите язык</p>
+                  <div class="header__lang-list">
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/kg.webp" alt="">
+                        <div class="header__lang-name">Кыргыз тили</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/tr.webp" alt="">
+                        <div class="header__lang-name">Türkçe</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/uk.webp" alt="">
+                        <div class="header__lang-name">English</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/de.webp" alt="">
+                        <div class="header__lang-name">Deutsch</div></a></div>
+                    <div class="header__lang-item"><a href="#"> <img loading="lazy" src="images/dist/ru.webp" alt="">
+                        <div class="header__lang-name">Русский</div></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hamburger"> <span>            </span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-slider">
+        <div class="container-lg"> 
+          <div class="main-slider__wrap">
+            <div class="main-slider__slider">
+              <div class="main-slider__slider-col">
+                <div id="slider">
+                  <div class="main-slider__item">
+                    <div class="main-slider__slider-txt"> 
+                      <h2 class="title">Авиадоставка посылок из ЕС, США и Турции</h2>
+                      <p>Aizen logistic  – сервис по доставке из зарубежных интернет-магазинов.</p><a class="btn" href="#">Подробнее </a>
+                    </div>
+                    <div class="main-slider__slider-img"> <img src="images/dist/slider2.webp" alt=""></div>
+                  </div>
+                  <div class="main-slider__item">
+                    <div class="main-slider__slider-txt"> 
+                      <h2 class="title">Aizen B2B </h2>
+                      <p>Международные поставки коммерческих грузов и документов</p><a class="btn" href="#">Подробнее </a>
+                    </div>
+                    <div class="main-slider__slider-img"> <img src="images/dist/slider1.webp" alt=""></div>
+                  </div>
+                  <div class="main-slider__item">
+                    <div class="main-slider__slider-txt"> 
+                      <h2 class="title">Авиадоставка посылок из ЕС, США и Турции</h2>
+                      <p>Aizen logistic  – сервис по доставке из зарубежных интернет-магазинов.</p><a class="btn" href="#">Подробнее </a>
+                    </div>
+                    <div class="main-slider__slider-img"> <img src="images/dist/slider3.webp" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-slider__slider-col">
+                <div class="main-slider__item">
+                  <div class="tracking-form">
+                    <div>
+                      <h2 class="title">Отследить посылку</h2>
+                      <p>Введите трек-номер отправления для отслеживания</p>
+                    </div>
+                    <div class="tracking-form__form">
+                      <form action="">
+                        <div class="tracking-form__form-wrap">
+                          <div class="tracking-form__form-input"> 
+                            <input type="text" placeholder="Номер отправления">
+                          </div>
+                          <button type="submit">
+                            <svg class="icon">
+                              <use xlink:href="sprite.svg#angle-left-white"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calculator section">
+        <div class="container-lg"> 
+          <h2 class="title">Калькулятор  </h2>
+          <p class="subtitle">Тут Вы можете рассчитать стоимость доставки </p>
+          <div class="calculator__calculator">
+            <div class="tab">
+              <ul class="tabs">
+                <li><a href="#">Физ-лицо</a></li>
+                <li><a href="#">Юр-лицо</a></li>
+              </ul>
+              <div class="tab_content">
+                <div class="tabs_item">
+                  <form action=""> 
+                    <div class="input-wrap">
+                                            <div class="input">
+                                              <input type="text">
+                                              <label class="label">Откуда</label>
+                                              <div class="input__icon">
+                                                <button>
+                                                  <svg class="icon">
+                                                    <use xlink:href="sprite.svg#search"> </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                            </div>
+                      <div class="switcher"> 
+                        <svg class="icon">
+                          <use xlink:href="sprite.svg#switcher"></use>
+                        </svg>
+                      </div>
+                                            <div class="input">
+                                              <input type="text">
+                                              <label class="label">Куда</label>
+                                              <div class="input__icon">
+                                                <button>
+                                                  <svg class="icon">
+                                                    <use xlink:href="sprite.svg#search"> </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                            </div>
+                      <div class="select">
+                        <input type="hidden" name="">
+                        <label class="label">Размер (габариты посылки) </label>
+                        <div class="select__selected"></div>
+                        <div class="select__dropdown">
+                          <div class="tab_select">
+                            <ul class="tabs_select">
+                              <li><a href="#">Точные размеры</a></li>
+                              <li><a href="#">Примерно</a></li>
+                            </ul>
+                            <div class="tab_content_select">
+                              <div class="tabs_item_select">
+                                <div class="select__list">
+                                  <label class="select__list-item" for="size1">
+                                    <input type="radio" value="size1" name="размер" id="size1">
+                                    <div class="select__list-item-img"> <img src="images/dist/envelope.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Конверт">Конверт</h2><span data-size="42x35x5 см, до 2 кг">42x35x5 см, до 2 кг</span>
+                                      <p>Маленькие предметы: документы, бижутерия, аксессуары</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size2">
+                                    <input type="radio" value="size2" name="размер" id="size2">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка XS">Коробка XS</h2><span data-size="17x12x9 см, до 0.5 кг">17x12x9 см, до 0.5 кг</span>
+                                      <p>Как коробка от смартфона: бижутерия, игрушки, гаджет</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size3">
+                                    <input type="radio" value="size3" name="размер" id="size3">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка S">Коробка S</h2><span data-size="23x19x10 см, до 2 кг">23x19x10 см, до 2 кг</span>
+                                      <p>Как коробка от утюга</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size4">
+                                    <input type="radio" value="size4" name="размер" id="size4">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка M">Коробка M</h2><span data-size="33x25x15 см, до 5 кг">33x25x15 см, до 5 кг</span>
+                                      <p>Чуть больше обувной коробки</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size5">
+                                    <input type="radio" value="size5" name="размер" id="size5">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка L">Коробка L</h2><span data-size="31x25x38 см, до 12 кг">31x25x38 см, до 12 кг</span>
+                                      <p>Как коробка от микроволновки</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size6">
+                                    <input type="radio" value="size6" name="размер" id="size6">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Большая коробка, ящик">Большая коробка, ящик</h2><span data-size="60x60x30 см, до 20 кг">60x60x30 см, до 20 кг</span>
+                                      <p>Набор посуды, домашний текстиль</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size7">
+                                    <input type="radio" value="size7" name="размер" id="size7">
+                                    <div class="select__list-item-img"> <img src="images/dist/telejka.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Тележка">Тележка</h2><span data-size="100x100x50 см, до 50 кг">100x100x50 см, до 50 кг</span>
+                                      <p>Большая посылка, например пылесос</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size8">
+                                    <input type="radio" value="size8" name="размер" id="size8">
+                                    <div class="select__list-item-img"> <img src="images/dist/paleta.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Палета">Палета</h2><span data-size="120x120x80 см, до 200 кг">120x120x80 см, до 200 кг</span>
+                                      <p>Крупный груз: крупная бытовая техника, домашняя библиотека</p>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="tabs_item_select">
+                                <div class="input-wrap">
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Длина, см</label>
+                                  </div>
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Ширина, см</label>
+                                  </div>
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Высота, см</label>
+                                  </div>
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Вес, кг</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="input__icon">
+                          <svg class="icon">
+                            <use xlink:href="sprite.svg#angle-down-gray"> </use>
+                          </svg>
+                        </div>
+                      </div><a class="btn" href="#">Рассчитать </a>
+                    </div>
+                  </form>
+                </div>
+                <div class="tabs_item">
+                  <form action=""> 
+                    <div class="input-wrap">
+                                            <div class="input">
+                                              <input type="text">
+                                              <label class="label">Откуда</label>
+                                              <div class="input__icon">
+                                                <button>
+                                                  <svg class="icon">
+                                                    <use xlink:href="sprite.svg#search"> </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                            </div>
+                      <div class="switcher"> 
+                        <svg class="icon">
+                          <use xlink:href="sprite.svg#switcher"></use>
+                        </svg>
+                      </div>
+                                            <div class="input">
+                                              <input type="text">
+                                              <label class="label">Куда</label>
+                                              <div class="input__icon">
+                                                <button>
+                                                  <svg class="icon">
+                                                    <use xlink:href="sprite.svg#search"> </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                            </div>
+                      <div class="select">
+                        <input type="hidden" name="">
+                        <label class="label">Размер (габариты посылки) </label>
+                        <div class="select__selected">               </div>
+                        <div class="select__dropdown">
+                          <div class="tab_select">
+                            <ul class="tabs_select">
+                              <li><a href="#">Точные размеры</a></li>
+                              <li><a href="#">Примерно</a></li>
+                            </ul>
+                            <div class="tab_content_select">
+                              <div class="tabs_item_select">
+                                <div class="select__list">
+                                  <label class="select__list-item" for="size1">
+                                    <input type="radio" value="size1" name="размер" id="size1">
+                                    <div class="select__list-item-img"> <img src="images/dist/envelope.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Конверт">Конверт</h2><span data-size="42x35x5 см, до 2 кг">42x35x5 см, до 2 кг</span>
+                                      <p>Маленькие предметы: документы, бижутерия, аксессуары</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size2">
+                                    <input type="radio" value="size2" name="размер" id="size2">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка XS">Коробка XS</h2><span data-size="17x12x9 см, до 0.5 кг">17x12x9 см, до 0.5 кг</span>
+                                      <p>Как коробка от смартфона: бижутерия, игрушки, гаджет</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size3">
+                                    <input type="radio" value="size3" name="размер" id="size3">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка S">Коробка S</h2><span data-size="23x19x10 см, до 2 кг">23x19x10 см, до 2 кг</span>
+                                      <p>Как коробка от утюга</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size4">
+                                    <input type="radio" value="size4" name="размер" id="size4">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка M">Коробка M</h2><span data-size="33x25x15 см, до 5 кг">33x25x15 см, до 5 кг</span>
+                                      <p>Чуть больше обувной коробки</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size5">
+                                    <input type="radio" value="size5" name="размер" id="size5">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Коробка L">Коробка L</h2><span data-size="31x25x38 см, до 12 кг">31x25x38 см, до 12 кг</span>
+                                      <p>Как коробка от микроволновки</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size6">
+                                    <input type="radio" value="size6" name="размер" id="size6">
+                                    <div class="select__list-item-img"> <img src="images/dist/box.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Большая коробка, ящик">Большая коробка, ящик</h2><span data-size="60x60x30 см, до 20 кг">60x60x30 см, до 20 кг</span>
+                                      <p>Набор посуды, домашний текстиль</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size7">
+                                    <input type="radio" value="size7" name="размер" id="size7">
+                                    <div class="select__list-item-img"> <img src="images/dist/telejka.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Тележка">Тележка</h2><span data-size="100x100x50 см, до 50 кг">100x100x50 см, до 50 кг</span>
+                                      <p>Большая посылка, например пылесос</p>
+                                    </div>
+                                  </label>
+                                  <label class="select__list-item" for="size8">
+                                    <input type="radio" value="size8" name="размер" id="size8">
+                                    <div class="select__list-item-img"> <img src="images/dist/paleta.webp" alt=""></div>
+                                    <div class="select__list-item-desc"> 
+                                      <h2 data-title="Палета">Палета</h2><span data-size="120x120x80 см, до 200 кг">120x120x80 см, до 200 кг</span>
+                                      <p>Крупный груз: крупная бытовая техника, домашняя библиотека</p>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="tabs_item_select">
+                                <div class="input-wrap">
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Длина, см</label>
+                                  </div>
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Ширина, см</label>
+                                  </div>
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Высота, см</label>
+                                  </div>
+                                  <div class="input">
+                                    <input type="text">
+                                    <label class="label">Вес, кг</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="input__icon">
+                          <svg class="icon">
+                            <use xlink:href="sprite.svg#angle-down-gray"> </use>
+                          </svg>
+                        </div>
+                      </div><a class="btn" href="#">Рассчитать </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="integration tac section">
+        <div class="container-lg"> 
+          <h2 class="title tac">Простая интеграция с другими сервисами</h2>
+          <h3 class="subtitle subtitle--light tac">
+            Aizen Логистика работает со всеми основными сервисами <br>для автоматической загрузки заказов из интернет-магазинов</h3>
+          <div class="tab">
+            <ul class="tabs">
+              <li><a href="#">С помощью Aizen</a></li>
+              <li><a href="#">Напрямую с <br> курьерскими службами</a></li>
+            </ul>
+            <div class="tab_content">
+              <div class="tabs_item">
+                <p>Вы работаете с нами по принципу по принципу одного окна!</p>
+                <div class="integration__banner">
+                  <svg>
+                    <use xlink:href="sprite.svg#integration-banner1"></use>
+                  </svg>
+                </div>
+                <p>
+                  Один договор c Aizen. Вся логистика на нас - сами заберем и отвезем посылки, <br>прием платежи, организуем возврат товаров.</p>
+              </div>
+              <div class="tabs_item">
+                <p>На каждую курьерскую службу свой договор.</p>
+                <div class="integration__banner">
+                  <svg>
+                    <use xlink:href="sprite.svg#integration-banner1"></use>
+                  </svg>
+                </div>
+                <p>
+                  Сложная и запутанная схема, затрудняющая работу отдела логистики, <br>увеличение сроков и делающая неудобными возвраты товаров.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="partners">
+          <div class="container-lg"> 
+            <div class="partners__slider">
+              <div class="partners__slider-elem">
+                <svg width="1150" height="142" viewBox="0 0 1150 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M379.25 0.499512L46.5494 141.341C46.3027 141.446 46.0376 141.5 45.7697 141.5H2.12298C-0.115662 141.5 -0.663668 138.383 1.44066 137.62L379.25 0.499512Z" fill="url(#paint0_linear_28_3)"></path>
+                  <path d="M398.554 16.38C400.63 15.0226 402.832 17.9111 400.972 19.5532L264.293 140.249C263.928 140.571 263.457 140.75 262.969 140.75H215.015C213.027 140.75 212.257 138.163 213.921 137.075L398.554 16.38Z" fill="url(#paint1_linear_28_3)"></path>
+                  <path d="M483.281 10.9029C484.496 8.99657 487.445 10.2522 486.912 12.4487L456.047 139.721C455.83 140.618 455.027 141.25 454.104 141.25H403.896C402.318 141.25 401.361 139.506 402.209 138.175L483.281 10.9029Z" fill="url(#paint2_linear_28_3)"></path>
+                  <path d="M573.038 6.99195C573.465 4.84489 576.535 4.84489 576.962 6.99195L602.238 134.228C602.484 135.465 601.537 136.617 600.276 136.617H549.724C548.463 136.617 547.516 135.465 547.762 134.228L573.038 6.99195Z" fill="url(#paint3_linear_28_3)"></path>
+                  <path d="M666.719 10.9029C665.504 8.99657 662.555 10.2522 663.088 12.4487L693.953 139.721C694.17 140.618 694.973 141.25 695.896 141.25H746.104C747.682 141.25 748.639 139.506 747.791 138.175L666.719 10.9029Z" fill="url(#paint4_linear_28_3)"></path>
+                  <path d="M751.446 16.38C749.37 15.0226 747.168 17.9111 749.028 19.5532L885.707 140.249C886.072 140.571 886.543 140.75 887.031 140.75H934.985C936.973 140.75 937.743 138.163 936.079 137.075L751.446 16.38Z" fill="url(#paint5_linear_28_3)"></path>
+                  <path d="M770.75 0.499512L1103.45 141.341C1103.7 141.446 1103.96 141.5 1104.23 141.5H1147.88C1150.12 141.5 1150.66 138.383 1148.56 137.62L770.75 0.499512Z" fill="url(#paint6_linear_28_3)"></path>
+                  <defs>
+                    <lineargradient id="paint0_linear_28_3" x1="184.349" y1="127.5" x2="663.072" y2="-422.261" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#D9D9D9"></stop>
+                      <stop offset="1" stop-color="#D9D9D9" stop-opacity="0"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint1_linear_28_3" x1="200.547" y1="141.752" x2="282.616" y2="-205.252" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#D9D9D9"></stop>
+                      <stop offset="1" stop-color="#D9D9D9" stop-opacity="0"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint2_linear_28_3" x1="1153.1" y1="0.750402" x2="1149.21" y2="155.892" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                      <stop offset="1" stop-color="#D9D9D9"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint3_linear_28_3" x1="575" y1="0.499512" x2="575" y2="141.5" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                      <stop offset="1" stop-color="#D9D9D9"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint4_linear_28_3" x1="1153.1" y1="0.750402" x2="1149.21" y2="155.892" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                      <stop offset="1" stop-color="#D9D9D9"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint5_linear_28_3" x1="1151.5" y1="0.246814" x2="1026.4" y2="436.51" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                      <stop offset="1" stop-color="#D9D9D9"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint6_linear_28_3" x1="771" y1="0.999528" x2="1159" y2="142" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                      <stop offset="1" stop-color="#D9D9D9">
+                        <path d="M379.25 0.499512L46.5494 141.341C46.3027 141.446 46.0376 141.5 45.7697 141.5H2.12298C-0.115662 141.5 -0.663668 138.383 1.44066 137.62L379.25 0.499512Z" fill="url(#paint0_linear_24_1908)"></path>
+                        <path d="M398.554 16.38C400.63 15.0226 402.832 17.9111 400.972 19.5532L264.293 140.249C263.928 140.571 263.457 140.75 262.969 140.75H215.015C213.027 140.75 212.257 138.163 213.921 137.075L398.554 16.38Z" fill="url(#paint1_linear_24_1908)"></path>
+                        <path d="M483.281 10.9029C484.496 8.99657 487.445 10.2522 486.912 12.4487L456.047 139.721C455.83 140.618 455.027 141.25 454.104 141.25H403.896C402.318 141.25 401.361 139.506 402.209 138.175L483.281 10.9029Z" fill="url(#paint2_linear_24_1908)"></path>
+                        <path d="M573.038 6.99195C573.465 4.84489 576.535 4.84489 576.962 6.99195L602.238 134.228C602.484 135.465 601.537 136.617 600.276 136.617H549.724C548.463 136.617 547.516 135.465 547.762 134.228L573.038 6.99195Z" fill="url(#paint3_linear_24_1908)"></path>
+                        <path d="M666.719 10.9029C665.504 8.99657 662.555 10.2522 663.088 12.4487L693.953 139.721C694.17 140.618 694.973 141.25 695.896 141.25H746.104C747.682 141.25 748.639 139.506 747.791 138.175L666.719 10.9029Z" fill="url(#paint4_linear_24_1908)"></path>
+                        <path d="M751.446 16.38C749.37 15.0226 747.168 17.9111 749.028 19.5532L885.707 140.249C886.072 140.571 886.543 140.75 887.031 140.75H934.985C936.973 140.75 937.743 138.163 936.079 137.075L751.446 16.38Z" fill="url(#paint5_linear_24_1908)"></path>
+                        <path d="M770.75 0.499512L1103.45 141.341C1103.7 141.446 1103.96 141.5 1104.23 141.5H1147.88C1150.12 141.5 1150.66 138.383 1148.56 137.62L770.75 0.499512Z" fill="url(#paint6_linear_24_1908)"></path>
+                        <defs>
+                          <lineargradient id="paint0_linear_24_1908" x1="184.349" y1="127.5" x2="663.072" y2="-422.261" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9"></stop>
+                            <stop offset="1" stop-color="#D9D9D9" stop-opacity="0"></stop>
+                          </lineargradient>
+                          <lineargradient id="paint1_linear_24_1908" x1="200.547" y1="141.752" x2="282.616" y2="-205.252" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9"></stop>
+                            <stop offset="1" stop-color="#D9D9D9" stop-opacity="0"></stop>
+                          </lineargradient>
+                          <lineargradient id="paint2_linear_24_1908" x1="1153.1" y1="0.750402" x2="1149.21" y2="155.892" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="#D9D9D9"></stop>
+                          </lineargradient>
+                          <lineargradient id="paint3_linear_24_1908" x1="575" y1="0.499512" x2="575" y2="141.5" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="#D9D9D9"></stop>
+                          </lineargradient>
+                          <lineargradient id="paint4_linear_24_1908" x1="1153.1" y1="0.750402" x2="1149.21" y2="155.892" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="#D9D9D9"></stop>
+                          </lineargradient>
+                          <lineargradient id="paint5_linear_24_1908" x1="1151.5" y1="0.246814" x2="1026.4" y2="436.51" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="#D9D9D9"></stop>
+                          </lineargradient>
+                          <lineargradient id="paint6_linear_24_1908" x1="771" y1="0.999528" x2="1159" y2="142" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="#D9D9D9"></stop>
+                          </lineargradient>
+                        </defs>
+                      </stop>
+                    </lineargradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="partners__slider-wrap">
+                <div class="swiper partners-js">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <svg>
+                        <use xlink:href="sprite.svg#partner1"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg>
+                        <use xlink:href="sprite.svg#partner2"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg>
+                        <use xlink:href="sprite.svg#partner3"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg>
+                        <use xlink:href="sprite.svg#partner4"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg>
+                        <use xlink:href="sprite.svg#partner5"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg>
+                        <use xlink:href="sprite.svg#partner6"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg>
+                        <use xlink:href="sprite.svg#partner3"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="steps tac section">
+        <div class="container-lg"> 
+          <h2 class="title tac">Отправить посылку просто!</h2>
+          <div class="steps__wrap icon-block-wrap">
+            <div class="steps__item icon-block-item">
+              <div class="icon-block-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#step1"> </use>
+                </svg>
+                <svg class="icon icon--arrow">
+                  <use xlink:href="sprite.svg#arrow"></use>
+                </svg>
+              </div>
+              <p>Заполните данные о посылке,	 отправителе и получателе в калькуляторе. Оплатите онлайн</p>
+            </div>
+            <div class="steps__item icon-block-item">
+              <div class="icon-block-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#step2"> </use>
+                </svg>
+                <svg class="icon icon--arrow">
+                  <use xlink:href="sprite.svg#arrow"></use>
+                </svg>
+              </div>
+              <p>Упакуйте посылку самостоятельно либо воспользуйтесь нашей упаковкой в пункте приема</p>
+            </div>
+            <div class="steps__item icon-block-item">
+              <div class="icon-block-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#step3"> </use>
+                </svg>
+                <svg class="icon icon--arrow">
+                  <use xlink:href="sprite.svg#arrow"></use>
+                </svg>
+              </div>
+              <p>Отнесите посылку в удобный для вас пункт приема или вызовите курьера</p>
+            </div>
+            <div class="steps__item icon-block-item">
+              <div class="icon-block-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#step4"> </use>
+                </svg>
+                <svg class="icon icon--arrow">
+                  <use xlink:href="sprite.svg#arrow"></use>
+                </svg>
+              </div>
+              <p>Отслеживайте статус отправления онлайн по трек-номеру до момента вручения</p>
+            </div>
+          </div><a class="btn" href="#">Вопросы и ответы       </a>
+        </div>
+      </div>
+      <div class="packaging section">
+        <div class="container-lg"> 
+          <h2 class="title">Как упаковать посылку в зависимости от <br> типа отправления</h2>
+          <div class="packaging__wrap">
+            <div class="col-wrap-3">
+              <div class="col">
+                <div>
+                  <div class="packaging__title">В отделениях Aizen</div>
+                  <ul> 
+                    <li>— Сотрудник предоставит фирменную упаковку и поможет правильно упаковать</li>
+                  </ul>
+                </div><a href="#">Правила упаковки хрупких товаров  </a>
+              </div>
+              <div class="col">
+                <div>
+                  <div class="packaging__title">Правила упаковки хрупких товаров</div>
+                  <ul> 
+                    <li>— Необходимо заранее упаковать посылку самостоятельно, с учетом правил Aizen Logistics</li>
+                  </ul>
+                </div><a href="#">Правила упаковки хрупких товаров  </a>
+              </div>
+              <div class="col">
+                <div>
+                  <div class="packaging__title">Отправка Курьером</div>
+                  <ul> 
+                    <li>— Курьер предоставит фирменный пакет и конверт</li>
+                    <li>— Передайте посылку в своей упаковке, ориентируясь на правила СберКурьера</li>
+                  </ul>
+                </div><a href="#">Правила упаковки хрупких товаров  </a>
+              </div>
+            </div>
+          </div>
+          <div class="packaging__delivery">
+                        <div class="packaging__delivery-kind">
+                          <div class="packaging__delivery-kind-top">
+                            <div class="packaging__delivery-kind-title">Авто - Доставка</div>
+                            <div class="packaging__delivery-kind-price">от 615 сом
+                            </div>
+                          </div>
+                          <div class="packaging__delivery-kind-bottom">
+                            <div class="packaging__delivery-kind-icon"> 
+                              <svg width="200" height="120">
+                                <use xlink:href="sprite.svg#delivery-kind1"></use>
+                              </svg>
+                            </div>
+                            <div class="packaging__delivery-kind-desc">
+                              <ul> 
+                                <li>Курьерская доставка от двери до двери по России.</li>
+                                <li>Вес: до 10 кг.</li>
+                                <li>Размеры - одна сторона не более 150 см, сумма длин всех сторон - 300 см.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="packaging__delivery-kind">
+                          <div class="packaging__delivery-kind-top">
+                            <div class="packaging__delivery-kind-title">Авиа - Доставка</div>
+                            <div class="packaging__delivery-kind-price">от 250 сом
+                            </div>
+                          </div>
+                          <div class="packaging__delivery-kind-bottom">
+                            <div class="packaging__delivery-kind-icon"> 
+                              <svg width="110">
+                                <use xlink:href="sprite.svg#delivery-kind2"></use>
+                              </svg>
+                            </div>
+                            <div class="packaging__delivery-kind-desc">
+                              <ul> 
+                                <li>Доставка отправлений от пункта приема до пункта выдачи по Кыргызстану.</li>
+                                <li>Максимальные габариты : отделения Сбера - 60×60×60 см, вес до 10 кг, Постамат - 60×36×36 см, вес до 10 кг.</li>
+                                <li></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+        </div>
+      </div>
+      <div class="advantages section">
+        <div class="container-lg"> 
+          <h2 class="title">Наши преимущества:</h2>
+          <div class="advantages__wrap">
+            <div class="advantages__item"> 
+              <div class="advantages__item-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#advantage1"> </use>
+                </svg>
+              </div>
+              <div class="advantages__item-desc">Бесконтактная курьерская доставка с помощью кода подтверждения и оплаты по ссылке в SMS</div>
+            </div>
+            <div class="advantages__item"> 
+              <div class="advantages__item-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#advantage2"> </use>
+                </svg>
+              </div>
+              <div class="advantages__item-desc">Круглосуточно доступные постаматы в охраняемой зоне отделений Aizen</div>
+            </div>
+            <div class="advantages__item"> 
+              <div class="advantages__item-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#advantage3"> </use>
+                </svg>
+              </div>
+              <div class="advantages__item-desc">Оптимальные сроки доставки</div>
+            </div>
+            <div class="advantages__item"> 
+              <div class="advantages__item-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#advantage4"> </use>
+                </svg>
+              </div>
+              <div class="advantages__item-desc">Пункты приема и выдачи посылок рядом с вами в отделениях Aizen</div>
+            </div>
+            <div class="advantages__item"> 
+              <div class="advantages__item-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#advantage5"> </use>
+                </svg>
+              </div>
+              <div class="advantages__item-desc">Собственные склады, транспорт, курьерские службы и прямые договоры с авиакомпаниями</div>
+            </div>
+            <div class="advantages__item"> 
+              <div class="advantages__item-icon"> 
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#advantage6"> </use>
+                </svg>
+              </div>
+              <div class="advantages__item-desc">Доступность в 26 000 населенных пунктах</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container-lg"> 
+          <p>Бытует мнение, что оптимизированные тексты могут быть либо плохими, либо совсем плохими. Без вариантов. Это глупое поверье пришло к нам из прошлого, когда примеры SEO-текстов достойного качества встречались крайне редко. Сегодня все изменилось. У копирайтера с головой и руками всегда есть шансы создать небольшой шедевр. Текст, который будет не только нравиться поисковикам, но и читателям. Сегодня, с помощью материалов от агентства Text iS, я покажу вам другую сторону оптимизации. Светлую. Давайте познакомимся с образцами продающих и информационных SEO-текстов, которым по силам пробиваться в ТОП и одновременно – распахивать кошельки читателей. Когда я только собирался писать про сон на пчелах, конкуренция по ключевым запросам уже была немаленькая. В то, что запросы выйдут в ТОП, я верил, но драка предстояла не шуточная. Клиенты же и вовсе просили «написать просто хороший текст». В итоге – и оптимизация текста лендинга сыграла свою роль (сайт на первых местах), и сам материал вышел неплохим. И снова образец правильно оптимизированного текста на главную страницу. На этот раз мы имеем дело с сайтом, предлагающим одежду для верующих женщин. Если почитаете материал, то увидите, что ключей там достаточно. А поскольку семантическое ядро собрано верно и ключи вполне органичные, запросы не слишком режут глаз. Итог – SEO-текст во всех возможных ТОП и достаточно легко читается.</p>
+          <div class="footer__nav">
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">О компании</a>
+              <ul>
+                <li> <a href="#">Новости</a></li>
+                <li> <a href="#">Вопрос/ответ</a></li>
+                <li> <a href="#">Контакты</a></li>
+                <li> <a href="#">Вакансии</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Отправить посылку</a>
+              <ul>
+                <li> <a href="#">Отследить посылку</a></li>
+                <li> <a href="#">Вызвать курьера</a></li>
+                <li> <a href="#">Отправить посылку</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Интернет-магазинам</a>
+              <ul>
+                <li> <a href="#">Доставка</a></li>
+                <li> <a href="#">Фулфилмент</a></li>
+                <li> <a href="#">Интеграции</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Корпоративным клиентам</a>
+              <ul>
+                <li> <a href="#">Доставка</a></li>
+                <li> <a href="#">Грузовые перевозки</a></li>
+                <li> <a href="#">Складская логистика</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Стать партнером</a>
+              <ul>
+              </ul>
+            </div>
+            <div class="footer__nav-col"><a class="footer__nav-main-link" href="#">Самозанятым</a>
+              <ul>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__control">
+            <div class="footer__lang lang"><span>Русский</span>
+              <svg class="icon">
+                <use xlink:href="sprite.svg#angle-down-gray"></use>
+              </svg>
+              <ul> 
+                <li> <a href="#">Русский</a></li>
+                <li> <a href="#">English</a></li>
+                <li> <a href="#">Кыргыз тили</a></li>
+                <li> <a href="#">Türkçe</a></li>
+                <li> <a href="#">Deutsch</a></li>
+              </ul>
+            </div>
+            <div class="footer__social socials">
+              <ul> 
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#discord"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#telegram"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#linkedin"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#youtube"></use>
+                    </svg></a></li>
+                <li> <a href="#">
+                    <svg>
+                      <use xlink:href="sprite.svg#twitter"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom"> 
+        <p>
+          © 2023 AIZEN LLC.Компания AIZEN LLC, зарегистрированный в Кыргызской Республике. Юридический адрес: ул. Кызыл-кийская 186, 720072, г. Бишкек, Кыргызстан (рег. №: 190058-3301-ООО). <br>AIZEN LLC в процессе получения лицензии платежной системы и оператора платежных систем НБКР. AIZEN LLC предоставляет услуги по осуществлению платежей и открытию цифровых кошельков до востребования.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.min.js"> </script>
+  <div class="menu">
+    <div class="menu__logo"><a href="#">
+        <svg class="icon">
+          <use xlink:href="sprite.svg#logoMenu"> </use>
+        </svg></a></div>
+    <div class="menu__nav"> 
+      <ul> 
+        <li> <a href="#">Отправить посылку</a></li>
+        <li> <a href="#">Бизнес клиентам</a></li>
+        <li> <a href="#">Шоппинг</a></li>
+        <li> <a href="#">О компании</a></li>
+        <li> <a href="#">Контакты</a></li>
+      </ul><a class="btn" href="#">Оставить заявку</a>
+    </div>
+    <div class="socials">
+      <ul> 
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#discord"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#telegram"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#linkedin"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#instagram"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#youtube"></use>
+            </svg></a></li>
+        <li> <a href="#">
+            <svg>
+              <use xlink:href="sprite.svg#twitter"></use>
+            </svg></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
